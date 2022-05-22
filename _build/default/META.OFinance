@@ -1,0 +1,6 @@
+description = ""
+requires = "ANSITerminal csv"
+archive(byte) = "OFinance.cma"
+archive(native) = "OFinance.cmxa"
+plugin(byte) = "OFinance.cma"
+plugin(native) = "OFinance.cmxs"

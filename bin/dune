@@ -1,0 +1,14 @@
+(executables
+ (names main csv_loader spread_loader visualize binomial_loader interface arb_loader)
+ (libraries OFinance ANSITerminal matplotlib))
+
+; blackscholes
+; montecarlo
+; maths
+; levy
+; spread
+; ANSITerminal
+; csvreader
+; matplotlib
+; binomial
+; arb))

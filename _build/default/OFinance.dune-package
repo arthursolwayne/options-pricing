@@ -1,0 +1,139 @@
+(lang dune 3.0)
+(name OFinance)
+(sections (lib .) (libexec .) (doc ../../doc/OFinance))
+(files
+ (lib
+  (META
+   OFinance.a
+   OFinance.cma
+   OFinance.cmxa
+   arb.ml
+   arb.mli
+   author.ml
+   author.mli
+   backtester.ml
+   backtester.mli
+   binomial.ml
+   binomial.mli
+   blackscholes.ml
+   blackscholes.mli
+   csvreader.ml
+   csvreader.mli
+   dune-package
+   levy.ml
+   levy.mli
+   maths.ml
+   maths.mli
+   oFinance.cmi
+   oFinance.cmt
+   oFinance.cmx
+   oFinance.ml
+   oFinance__Arb.cmi
+   oFinance__Arb.cmt
+   oFinance__Arb.cmti
+   oFinance__Arb.cmx
+   oFinance__Author.cmi
+   oFinance__Author.cmt
+   oFinance__Author.cmti
+   oFinance__Author.cmx
+   oFinance__Backtester.cmi
+   oFinance__Backtester.cmt
+   oFinance__Backtester.cmti
+   oFinance__Backtester.cmx
+   oFinance__Binomial.cmi
+   oFinance__Binomial.cmt
+   oFinance__Binomial.cmti
+   oFinance__Binomial.cmx
+   oFinance__Blackscholes.cmi
+   oFinance__Blackscholes.cmt
+   oFinance__Blackscholes.cmti
+   oFinance__Blackscholes.cmx
+   oFinance__Csvreader.cmi
+   oFinance__Csvreader.cmt
+   oFinance__Csvreader.cmti
+   oFinance__Csvreader.cmx
+   oFinance__Levy.cmi
+   oFinance__Levy.cmt
+   oFinance__Levy.cmti
+   oFinance__Levy.cmx
+   oFinance__Maths.cmi
+   oFinance__Maths.cmt
+   oFinance__Maths.cmti
+   oFinance__Maths.cmx
+   oFinance__Portfolio.cmi
+   oFinance__Portfolio.cmt
+   oFinance__Portfolio.cmti
+   oFinance__Portfolio.cmx
+   oFinance__Spread.cmi
+   oFinance__Spread.cmt
+   oFinance__Spread.cmti
+   oFinance__Spread.cmx
+   opam
+   portfolio.ml
+   portfolio.mli
+   spread.ml
+   spread.mli))
+ (libexec (OFinance.cmxs))
+ (doc (README.md)))
+(library
+ (name OFinance)
+ (kind normal)
+ (archives (byte OFinance.cma) (native OFinance.cmxa))
+ (plugins (byte OFinance.cma) (native OFinance.cmxs))
+ (native_archives OFinance.a)
+ (requires ANSITerminal csv)
+ (main_module_name OFinance)
+ (modes byte native)
+ (modules
+  (wrapped
+   (main_module_name OFinance)
+   (modules
+    ((name Arb) (obj_name oFinance__Arb) (visibility public) (impl) (intf))
+    ((name Author)
+     (obj_name oFinance__Author)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Backtester)
+     (obj_name oFinance__Backtester)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Binomial)
+     (obj_name oFinance__Binomial)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Blackscholes)
+     (obj_name oFinance__Blackscholes)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Csvreader)
+     (obj_name oFinance__Csvreader)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Levy) (obj_name oFinance__Levy) (visibility public) (impl) (intf))
+    ((name Maths)
+     (obj_name oFinance__Maths)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Portfolio)
+     (obj_name oFinance__Portfolio)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Spread)
+     (obj_name oFinance__Spread)
+     (visibility public)
+     (impl)
+     (intf)))
+   (alias_module
+    (name OFinance)
+    (obj_name oFinance)
+    (visibility public)
+    (kind alias)
+    (impl))
+   (wrapped true))))

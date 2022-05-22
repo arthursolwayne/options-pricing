@@ -1,0 +1,11 @@
+Instructions:
+A: configure opam with necessary libraries and compiler version
+  1: opam switch create [switch name] ocaml-base-compiler.4.13.0
+  2: opam install -y utop odoc ounit2 qcheck csv ANSITerminal bisect_ppx menhir ocaml-lsp-server ocamlformat ocamlformat-rpc
+B: 
+  1: dune build
+  2: make spread
+  3: make pricing
+  4: make reader
+C: 
+  :)

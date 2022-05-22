@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Backtester (OFinance.OFinance.Backtester)</title><link rel="stylesheet" href="../../../odoc.css"/><meta charset="utf-8"/><meta name="generator" content="odoc 2.1.0"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><script src="../../../highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></head><body class="odoc"><nav class="odoc-nav"><a href="../index.html">Up</a> – <a href="../../index.html">OFinance</a> &#x00BB; <a href="../index.html">OFinance</a> &#x00BB; Backtester</nav><header class="odoc-preamble"><h1>Module <code><span>OFinance.Backtester</span></code></h1><p>Module to backtest information on both stocks and options</p></header><div class="odoc-content"><div class="odoc-spec"><div class="spec value" id="val-profit_between_dates_stocks" class="anchored"><a href="#val-profit_between_dates_stocks" class="anchor"></a><code><span><span class="keyword">val</span> profit_between_dates_stocks : 
+  <span><a href="../Portfolio/index.html#type-stock_date">Portfolio.stock_date</a> <span class="arrow">&#45;&gt;</span></span>
+  <span><a href="../Portfolio/index.html#type-stock_date">Portfolio.stock_date</a> <span class="arrow">&#45;&gt;</span></span>
+  <span><span><span>(<a href="../Portfolio/index.html#type-stock_date">Portfolio.stock_date</a> * float)</span> list</span> <span class="arrow">&#45;&gt;</span></span>
+  float</span></code></div><div class="spec-doc"><p><code>profit stock_date stock_date ((stock_date*float)list )</code> returns the profit made between two dates</p></div></div><div class="odoc-spec"><div class="spec value" id="val-profit_betwen_calloption_dates" class="anchored"><a href="#val-profit_betwen_calloption_dates" class="anchor"></a><code><span><span class="keyword">val</span> profit_betwen_calloption_dates : 
+  <span><a href="../Blackscholes/index.html#type-date">Blackscholes.date</a> <span class="arrow">&#45;&gt;</span></span>
+  <span><a href="../Blackscholes/index.html#type-date">Blackscholes.date</a> <span class="arrow">&#45;&gt;</span></span>
+  <span><a href="../Blackscholes/index.html#type-european_option">Blackscholes.european_option</a> <span class="arrow">&#45;&gt;</span></span>
+  <span>float <span class="arrow">&#45;&gt;</span></span>
+  float</span></code></div><div class="spec-doc"><p><code>profit_betwen_calloption_dates date date european_option float float</code> returns the differnece of two call options depending on the different current date</p></div></div><div class="odoc-spec"><div class="spec value" id="val-profit_betwen_calloption_stock_price" class="anchored"><a href="#val-profit_betwen_calloption_stock_price" class="anchor"></a><code><span><span class="keyword">val</span> profit_betwen_calloption_stock_price : 
+  <span>float <span class="arrow">&#45;&gt;</span></span>
+  <span>float <span class="arrow">&#45;&gt;</span></span>
+  <span><a href="../Blackscholes/index.html#type-european_option">Blackscholes.european_option</a> <span class="arrow">&#45;&gt;</span></span>
+  <span><a href="../Blackscholes/index.html#type-date">Blackscholes.date</a> <span class="arrow">&#45;&gt;</span></span>
+  float</span></code></div><div class="spec-doc"><p><code>profit_betwen_calloption_stock_price  price1 price2  european_option date</code> returns the differnece of two call options depending on the different stock price</p></div></div><div class="odoc-spec"><div class="spec value" id="val-profit_betwen_putoption_dates" class="anchored"><a href="#val-profit_betwen_putoption_dates" class="anchor"></a><code><span><span class="keyword">val</span> profit_betwen_putoption_dates : 
+  <span><a href="../Blackscholes/index.html#type-date">Blackscholes.date</a> <span class="arrow">&#45;&gt;</span></span>
+  <span><a href="../Blackscholes/index.html#type-date">Blackscholes.date</a> <span class="arrow">&#45;&gt;</span></span>
+  <span><a href="../Blackscholes/index.html#type-european_option">Blackscholes.european_option</a> <span class="arrow">&#45;&gt;</span></span>
+  <span>float <span class="arrow">&#45;&gt;</span></span>
+  float</span></code></div><div class="spec-doc"><p><code>profit_betwen_putoption_dates date date european_option float float</code> returns the differnece of two put options depending on the different current date</p></div></div><div class="odoc-spec"><div class="spec value" id="val-profit_betwen_putoption_stock_price" class="anchored"><a href="#val-profit_betwen_putoption_stock_price" class="anchor"></a><code><span><span class="keyword">val</span> profit_betwen_putoption_stock_price : 
+  <span>float <span class="arrow">&#45;&gt;</span></span>
+  <span>float <span class="arrow">&#45;&gt;</span></span>
+  <span><a href="../Blackscholes/index.html#type-european_option">Blackscholes.european_option</a> <span class="arrow">&#45;&gt;</span></span>
+  <span><a href="../Blackscholes/index.html#type-date">Blackscholes.date</a> <span class="arrow">&#45;&gt;</span></span>
+  float</span></code></div><div class="spec-doc"><p><code>profit_betwen_putoption_stock_price  price1 price2  european_option date</code> returns the differnece of two put options depending on the different stock price</p></div></div></div></body></html>
